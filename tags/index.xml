@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Why The Platypus Codes</title>
+    <link>why.theplatypus.codes/tags/</link>
+    <description>Recent content in Tags on Why The Platypus Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Dec 2017 12:28:51 -0500</lastBuildDate>
+    
+	<atom:link href="why.theplatypus.codes/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arch</title>
+      <link>why.theplatypus.codes/tags/arch/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      
+      <guid>why.theplatypus.codes/tags/arch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootable</title>
+      <link>why.theplatypus.codes/tags/bootable/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      
+      <guid>why.theplatypus.codes/tags/bootable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>why.theplatypus.codes/tags/install/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      
+      <guid>why.theplatypus.codes/tags/install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>why.theplatypus.codes/tags/linux/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      
+      <guid>why.theplatypus.codes/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syslinux</title>
+      <link>why.theplatypus.codes/tags/syslinux/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      
+      <guid>why.theplatypus.codes/tags/syslinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usb</title>
+      <link>why.theplatypus.codes/tags/usb/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      
+      <guid>why.theplatypus.codes/tags/usb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
