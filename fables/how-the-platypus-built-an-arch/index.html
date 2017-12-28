@@ -48,7 +48,7 @@
                     </h1>
                     <h2 class="headline">
                     Dec 26, 2017 12:28
-                    · 581 words
+                    · 608 words
                     · 3 minute read
                       <span class="tags">
                       
@@ -130,6 +130,12 @@ was big and <a href="https://wiki.archlinux.org/index.php/ext4">extendable</a>.<
 mkpart primary fat32 1MiB 513MiB
 mkpart primary ext4 513MiB 100%
 </code></pre>
+
+<blockquote>
+<p>It may also be necessary to explicitly <a href="https://wiki.archlinux.org/index.php/Installation_guide#Format_the_partitions">format the partitions</a>.
+<code>mkfs.vfat -F 32 /dev/sdxx</code> and <code>mkfs.ext4 /dev/sdxy</code> should do it.
+Installing <code>dosfstools</code> might be required for <code>mkfs.vfat</code>.</p>
+</blockquote>
 
 <h2 id="mounting-https-wiki-archlinux-org-index-php-installation-guide-mount-the-file-systems"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Mount_the_file_systems">Mounting</a></h2>
 
