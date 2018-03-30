@@ -30,6 +30,24 @@
     </item>
     
     <item>
+      <title>Cryptography</title>
+      <link>http://why.theplatypus.codes/tags/cryptography/</link>
+      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      
+      <guid>http://why.theplatypus.codes/tags/cryptography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Client Registration Protocol</title>
+      <link>http://why.theplatypus.codes/tags/dynamic-client-registration-protocol/</link>
+      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      
+      <guid>http://why.theplatypus.codes/tags/dynamic-client-registration-protocol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Install</title>
       <link>http://why.theplatypus.codes/tags/install/</link>
       <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
@@ -39,11 +57,29 @@
     </item>
     
     <item>
+      <title>Jws</title>
+      <link>http://why.theplatypus.codes/tags/jws/</link>
+      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      
+      <guid>http://why.theplatypus.codes/tags/jws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>http://why.theplatypus.codes/tags/linux/</link>
       <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oauth2</title>
+      <link>http://why.theplatypus.codes/tags/oauth2/</link>
+      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      
+      <guid>http://why.theplatypus.codes/tags/oauth2/</guid>
       <description></description>
     </item>
     

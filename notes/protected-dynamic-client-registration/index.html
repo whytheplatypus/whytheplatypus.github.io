@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="David Gage">
+		<meta name="description" content="Fables of code">
+		<meta name="generator" content="Hugo 0.31-DEV" />
+		<title>Protected Dynamic Client Registration &middot; Why The Platypus Codes</title>
+		<link rel="shortcut icon" href="http://why.theplatypus.codes/images/favicon.ico">
+		<link rel="stylesheet" href="http://why.theplatypus.codes/css/style.css">
+		<link rel="stylesheet" href="http://why.theplatypus.codes/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://why.theplatypus.codes/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://why.theplatypus.codes/index.xml" rel="alternate" type="application/rss+xml" title="Why The Platypus Codes" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://why.theplatypus.codes/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='http://why.theplatypus.codes/tags'>Tags</a>
+
+	
+
+	
+	<a class="cta" href="http://why.theplatypus.codes/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Protected Dynamic Client Registration
+                    </h1>
+                    <h2 class="headline">
+                    Mar 30, 2018 15:37
+                    · 182 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="http://why.theplatypus.codes/tags/oauth2">oauth2</a>
+                          
+                              <a href="http://why.theplatypus.codes/tags/dynamic-client-registration-protocol">dynamic client registration protocol</a>
+                          
+                              <a href="http://why.theplatypus.codes/tags/jws">JWS</a>
+                          
+                              <a href="http://why.theplatypus.codes/tags/cryptography">cryptography</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h1 id="thoughts-on-protected-dynamic-client-registration">Thoughts on Protected Dynamic Client Registration.</h1>
+
+<p>This proposes a
+method of trust
+intended for
+<a href="https://tools.ietf.org/html/rfc7591#section-2.3">software statements</a>
+that can be Endorsed by trusted 3rd parties,
+and used by an authorization server
+that has
+little or no knowledge of the Developer.</p>
+
+<p>This uses the
+<a href="https://tools.ietf.org/html/rfc7515#section-7.2.1">General JWS JSON Serialization Syntax</a>
+to exchange data
+and signatures
+between parties.</p>
+
+<h2 id="payload">Payload</h2>
+
+<p>MUST
+contain at least one of
+<a href="https://tools.ietf.org/html/rfc7515#section-4.1.4">kid</a>,
+<a href="https://tools.ietf.org/html/rfc7515#section-4.1.2">jku</a>,
+<a href="https://tools.ietf.org/html/rfc7515#section-4.1.3">jwk</a>
+to allow
+identification of the Developer.</p>
+
+<h2 id="signatures">Signatures</h2>
+
+<h3 id="endorsement-signature-s">Endorsement Signature(s)</h3>
+
+<p>MAY
+contain <code>exp</code>
+with a timestamp of the expiration time.
+MAY contain
+<code>iss</code> identifying the Endorser.
+Which endorsement bodies
+the authorization server
+chooses to trust
+and how it verifies these signatures
+is outside the scope of this document.</p>
+
+<h3 id="developer-signature">Developer Signature</h3>
+
+<p>The <a href="https://tools.ietf.org/html/rfc7515#section-7.2.1">protected header</a>
+MUST
+contain <code>exp</code>
+with a timestamp of the expiration time.</p>
+
+<pre><code>{
+	&quot;crit&quot;: [&quot;exp&quot;],
+	&quot;exp&quot;: 1363284000,
+}
+
+</code></pre>
+
+<p>The authorization server MAY
+specify that this expiration cannot be
+too far in the future.</p>
+
+<p>MUST contain ONE OF
+<a href="https://tools.ietf.org/html/rfc7515#section-4.1.3">jwk</a> or <a href="https://tools.ietf.org/html/rfc7515#section-4.1.4">kid</a>
+that must
+match
+or
+be used to identify
+the key in the payload
+used to create this signature.</p>
+
+<p>MUST
+be the last entry in
+signature array.</p>
+
+<h1 id="example-usage">Example usage</h1>
+
+<p><a href="/images/protected_dynamic_client_registration.png"><img src="/images/protected_dynamic_client_registration.png" alt="protected dcrp flow" /></a></p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/whytheplatypus">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/dgage">
+        <i class="fa fa-linkedin-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> David Gage
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+    <p class="small">
+    	<a href="http://madewithloveinbaltimore.org">Made with &hearts; in Baltimore</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://why.theplatypus.codes/js/jquery-2.2.4.min.js"></script>
+<script src="http://why.theplatypus.codes/js/main.js"></script>
+<script src="http://why.theplatypus.codes/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-111628969-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+    </body>
+</html>
