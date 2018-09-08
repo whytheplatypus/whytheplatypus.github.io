@@ -6,17 +6,17 @@
     <description>Recent content in Protocols on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 13:18:51 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 13:18:00 -0400</lastBuildDate>
     
 	<atom:link href="http://why.theplatypus.codes/tags/protocols/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Elixir Protocols and Behaviors</title>
-      <link>http://why.theplatypus.codes/notes/elixir-protocols-and-behaviors/</link>
-      <pubDate>Mon, 16 Jul 2018 13:18:51 -0400</pubDate>
+      <link>http://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</link>
+      <pubDate>Mon, 16 Jul 2018 13:18:00 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/notes/elixir-protocols-and-behaviors/</guid>
+      <guid>http://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</guid>
       <description>Protocols: Describe how an known action is taken on a Type.
 Behaviors: Describe how a Type takes an known action.</description>
     </item>

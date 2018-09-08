@@ -6,96 +6,69 @@
     <description>Recent content in Tags on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Dec 2017 12:28:51 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 26 Dec 2017 12:28:00 -0400</lastBuildDate>
     
 	<atom:link href="http://why.theplatypus.codes/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Arch</title>
-      <link>http://why.theplatypus.codes/tags/arch/</link>
-      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
+      <title>Arch Linux</title>
+      <link>http://why.theplatypus.codes/tags/arch-linux/</link>
+      <pubDate>Tue, 26 Dec 2017 12:28:00 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/tags/arch/</guid>
+      <guid>http://why.theplatypus.codes/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Behaviors</title>
       <link>http://why.theplatypus.codes/tags/behaviors/</link>
-      <pubDate>Mon, 16 Jul 2018 13:18:51 -0400</pubDate>
+      <pubDate>Mon, 16 Jul 2018 13:18:00 -0400</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/behaviors/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Bootable</title>
-      <link>http://why.theplatypus.codes/tags/bootable/</link>
-      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
-      
-      <guid>http://why.theplatypus.codes/tags/bootable/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Cryptography</title>
       <link>http://why.theplatypus.codes/tags/cryptography/</link>
-      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/cryptography/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dynamic Client Registration Protocol</title>
-      <link>http://why.theplatypus.codes/tags/dynamic-client-registration-protocol/</link>
-      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      <title>Dcrp</title>
+      <link>http://why.theplatypus.codes/tags/dcrp/</link>
+      <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/tags/dynamic-client-registration-protocol/</guid>
+      <guid>http://why.theplatypus.codes/tags/dcrp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elixir</title>
       <link>http://why.theplatypus.codes/tags/elixir/</link>
-      <pubDate>Mon, 16 Jul 2018 13:18:51 -0400</pubDate>
+      <pubDate>Mon, 16 Jul 2018 13:18:00 -0400</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/elixir/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Install</title>
-      <link>http://why.theplatypus.codes/tags/install/</link>
-      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
-      
-      <guid>http://why.theplatypus.codes/tags/install/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jws</title>
       <link>http://why.theplatypus.codes/tags/jws/</link>
-      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/jws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>http://why.theplatypus.codes/tags/linux/</link>
-      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
-      
-      <guid>http://why.theplatypus.codes/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Oauth2</title>
       <link>http://why.theplatypus.codes/tags/oauth2/</link>
-      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/oauth2/</guid>
       <description></description>
@@ -104,27 +77,9 @@
     <item>
       <title>Protocols</title>
       <link>http://why.theplatypus.codes/tags/protocols/</link>
-      <pubDate>Mon, 16 Jul 2018 13:18:51 -0400</pubDate>
+      <pubDate>Mon, 16 Jul 2018 13:18:00 -0400</pubDate>
       
       <guid>http://why.theplatypus.codes/tags/protocols/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syslinux</title>
-      <link>http://why.theplatypus.codes/tags/syslinux/</link>
-      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
-      
-      <guid>http://why.theplatypus.codes/tags/syslinux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Usb</title>
-      <link>http://why.theplatypus.codes/tags/usb/</link>
-      <pubDate>Tue, 26 Dec 2017 12:28:51 -0500</pubDate>
-      
-      <guid>http://why.theplatypus.codes/tags/usb/</guid>
       <description></description>
     </item>
     

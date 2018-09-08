@@ -6,17 +6,17 @@
     <description>Recent content in Cryptography on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Mar 2018 15:37:51 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 Mar 2018 15:37:06 -0400</lastBuildDate>
     
 	<atom:link href="http://why.theplatypus.codes/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Protected Dynamic Client Registration</title>
-      <link>http://why.theplatypus.codes/notes/protected-dynamic-client-registration/</link>
-      <pubDate>Fri, 30 Mar 2018 15:37:51 -0400</pubDate>
+      <link>http://why.theplatypus.codes/note/protected-dynamic-client-registration/</link>
+      <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/notes/protected-dynamic-client-registration/</guid>
+      <guid>http://why.theplatypus.codes/note/protected-dynamic-client-registration/</guid>
       <description>Thoughts on Protected Dynamic Client Registration. This proposes a method of trust intended for software statements that can be Endorsed by trusted 3rd parties, and used by an authorization server that has little or no knowledge of the Developer.
 This uses the General JWS JSON Serialization Syntax to exchange data and signatures between parties.
 Payload MUST contain at least one of kid, jku, jwk to allow identification of the Developer.</description>
