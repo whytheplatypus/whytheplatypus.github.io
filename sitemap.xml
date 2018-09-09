@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://why.theplatypus.codes/note/github-blog-with-circle-ci/</loc>
-    <lastmod>2018-09-09T09:34:20-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
   </url>
@@ -66,7 +61,7 @@
   
   <url>
     <loc>http://why.theplatypus.codes/note/</loc>
-    <lastmod>2018-09-09T09:34:20-04:00</lastmod>
+    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -90,7 +85,7 @@
   
   <url>
     <loc>http://why.theplatypus.codes/</loc>
-    <lastmod>2018-09-09T09:34:20-04:00</lastmod>
+    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
