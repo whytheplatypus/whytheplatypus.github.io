@@ -6,10 +6,20 @@
     <description>Recent content in Notes on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 13:18:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 09 Sep 2018 09:34:20 -0400</lastBuildDate>
     
 	<atom:link href="http://why.theplatypus.codes/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Github Blog With Circle Ci</title>
+      <link>http://why.theplatypus.codes/note/github-blog-with-circle-ci/</link>
+      <pubDate>Sun, 09 Sep 2018 09:34:20 -0400</pubDate>
+      
+      <guid>http://why.theplatypus.codes/note/github-blog-with-circle-ci/</guid>
+      <description>This is mostly to test circleci
+ssh-keygen -t rsa -b 4096 -C &amp;lt;email&amp;gt; -m &#39;PEM&#39;  specify key with github.com hostname, only add to ssh keys, add_ssh_keys directly before deploy.</description>
+    </item>
     
     <item>
       <title>Elixir Protocols and Behaviors</title>
