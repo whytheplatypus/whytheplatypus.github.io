@@ -2,31 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Why The Platypus Codes</title>
-    <link>http://why.theplatypus.codes/</link>
+    <link>https://why.theplatypus.codes/</link>
     <description>Recent content on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 13:18:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 09 Sep 2018 09:34:20 -0400</lastBuildDate>
     
-	<atom:link href="http://why.theplatypus.codes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://why.theplatypus.codes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Github Blog With Circle Ci</title>
+      <link>https://why.theplatypus.codes/note/github-blog-with-circle-ci/</link>
+      <pubDate>Sun, 09 Sep 2018 09:34:20 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/note/github-blog-with-circle-ci/</guid>
+      <description>This is mostly to test circleci
+ssh-keygen -t rsa -b 4096 -C &amp;lt;email&amp;gt; -m &#39;PEM&#39;  specify key with github.com hostname, only add to ssh keys, add_ssh_keys directly before deploy.</description>
+    </item>
+    
+    <item>
       <title>Elixir Protocols and Behaviors</title>
-      <link>http://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</link>
+      <link>https://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</link>
       <pubDate>Mon, 16 Jul 2018 13:18:00 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</guid>
+      <guid>https://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</guid>
       <description>Protocols: Describe how an known action is taken on a Type.
 Behaviors: Describe how a Type takes an known action.</description>
     </item>
     
     <item>
       <title>Protected Dynamic Client Registration</title>
-      <link>http://why.theplatypus.codes/note/protected-dynamic-client-registration/</link>
+      <link>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</link>
       <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/note/protected-dynamic-client-registration/</guid>
+      <guid>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</guid>
       <description>Thoughts on Protected Dynamic Client Registration. This proposes a method of trust intended for software statements that can be Endorsed by trusted 3rd parties, and used by an authorization server that has little or no knowledge of the Developer.
 This uses the General JWS JSON Serialization Syntax to exchange data and signatures between parties.
 Payload MUST contain at least one of kid, jku, jwk to allow identification of the Developer.</description>
@@ -34,10 +44,10 @@ Payload MUST contain at least one of kid, jku, jwk to allow identification of th
     
     <item>
       <title>How the Platypus Built an Arch</title>
-      <link>http://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</link>
+      <link>https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</link>
       <pubDate>Tue, 26 Dec 2017 12:28:00 -0400</pubDate>
       
-      <guid>http://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</guid>
+      <guid>https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</guid>
       <description>One evening the platypus was in his workshop tinkering with a new piece of code. As the evening wore on and the code grew the platypus started to think about the code&amp;rsquo;s future. Who would use it? Where would it live? He knew that only he would use the code, it was just a silly personal project after all, but to his dismay he did not know where it could live.</description>
     </item>
     

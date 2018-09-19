@@ -3,89 +3,94 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</loc>
+    <loc>https://why.theplatypus.codes/note/github-blog-with-circle-ci/</loc>
+    <lastmod>2018-09-09T09:34:20-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/note/protected-dynamic-client-registration/</loc>
+    <loc>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</loc>
     <lastmod>2018-03-30T15:37:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</loc>
+    <loc>https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</loc>
     <lastmod>2017-12-26T12:28:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/tags/arch-linux/</loc>
-    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://why.theplatypus.codes/tags/behaviors/</loc>
-    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://why.theplatypus.codes/tags/cryptography/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://why.theplatypus.codes/tags/dcrp/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://why.theplatypus.codes/tags/elixir/</loc>
-    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://why.theplatypus.codes/fable/</loc>
+    <loc>https://why.theplatypus.codes/tags/arch-linux/</loc>
     <lastmod>2017-12-26T12:28:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/tags/jws/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://why.theplatypus.codes/note/</loc>
+    <loc>https://why.theplatypus.codes/tags/behaviors/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/tags/oauth2/</loc>
+    <loc>https://why.theplatypus.codes/tags/cryptography/</loc>
     <lastmod>2018-03-30T15:37:06-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/tags/protocols/</loc>
+    <loc>https://why.theplatypus.codes/tags/dcrp/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/elixir/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/tags/</loc>
+    <loc>https://why.theplatypus.codes/fable/</loc>
     <lastmod>2017-12-26T12:28:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://why.theplatypus.codes/</loc>
+    <loc>https://why.theplatypus.codes/tags/jws/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/note/</loc>
+    <lastmod>2018-09-09T09:34:20-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/oauth2/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/protocols/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/</loc>
+    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/</loc>
+    <lastmod>2018-09-09T09:34:20-04:00</lastmod>
     <priority>0</priority>
   </url>
   
