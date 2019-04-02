@@ -6,20 +6,10 @@
     <description>Recent content in Notes on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Sep 2018 09:34:20 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 13:18:00 -0400</lastBuildDate>
     
 	<atom:link href="https://why.theplatypus.codes/note/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Github Blog With Circle Ci</title>
-      <link>https://why.theplatypus.codes/note/github-blog-with-circle-ci/</link>
-      <pubDate>Sun, 09 Sep 2018 09:34:20 -0400</pubDate>
-      
-      <guid>https://why.theplatypus.codes/note/github-blog-with-circle-ci/</guid>
-      <description>This is mostly to test circleci
-ssh-keygen -t rsa -b 4096 -C &amp;lt;email&amp;gt; -m &#39;PEM&#39;  specify key with github.com hostname, only add to ssh keys, add_ssh_keys directly before deploy.</description>
-    </item>
     
     <item>
       <title>Elixir Protocols and Behaviors</title>
@@ -29,17 +19,6 @@ ssh-keygen -t rsa -b 4096 -C &amp;lt;email&amp;gt; -m &#39;PEM&#39;  specify key
       <guid>https://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</guid>
       <description>Protocols: Describe how an known action is taken on a Type.
 Behaviors: Describe how a Type takes an known action.</description>
-    </item>
-    
-    <item>
-      <title>Protected Dynamic Client Registration</title>
-      <link>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</link>
-      <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
-      
-      <guid>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</guid>
-      <description>Thoughts on Protected Dynamic Client Registration. This proposes a method of trust intended for software statements that can be Endorsed by trusted 3rd parties, and used by an authorization server that has little or no knowledge of the Developer.
-This uses the General JWS JSON Serialization Syntax to exchange data and signatures between parties.
-Payload MUST contain at least one of kid, jku, jwk to allow identification of the Developer.</description>
     </item>
     
   </channel>

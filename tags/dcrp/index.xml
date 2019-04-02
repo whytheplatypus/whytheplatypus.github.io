@@ -13,10 +13,10 @@
     
     <item>
       <title>Protected Dynamic Client Registration</title>
-      <link>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</link>
+      <link>https://why.theplatypus.codes/thought/protected-dynamic-client-registration/</link>
       <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
-      <guid>https://why.theplatypus.codes/note/protected-dynamic-client-registration/</guid>
+      <guid>https://why.theplatypus.codes/thought/protected-dynamic-client-registration/</guid>
       <description>Thoughts on Protected Dynamic Client Registration. This proposes a method of trust intended for software statements that can be Endorsed by trusted 3rd parties, and used by an authorization server that has little or no knowledge of the Developer.
 This uses the General JWS JSON Serialization Syntax to exchange data and signatures between parties.
 Payload MUST contain at least one of kid, jku, jwk to allow identification of the Developer.</description>
