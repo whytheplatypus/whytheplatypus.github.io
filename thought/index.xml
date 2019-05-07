@@ -6,10 +6,23 @@
     <description>Recent content in Thoughts on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Mar 2018 15:37:06 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 10:30:00 -0400</lastBuildDate>
     
 	<atom:link href="https://why.theplatypus.codes/thought/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quotes from books taken entirely out of context and therefor completely useless.</title>
+      <link>https://why.theplatypus.codes/thought/quotes-from-books-taken-entirely-out-of-context-and-therefor-completely-useless/</link>
+      <pubDate>Tue, 07 May 2019 10:30:00 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/thought/quotes-from-books-taken-entirely-out-of-context-and-therefor-completely-useless/</guid>
+      <description>Structure and Interpretation of Computer Programs (Harold Abelson, Gerald Jay Sussman, Julie Sussman)  you must read and write computer programs&amp;mdash;many of them. It doesn&amp;rsquo;t matter much what the programs are about or what applications they serve. ( p. xi)
+ 
+ Thus, programs must be written for people to read, and only incidentally for machines to execute. (p. xv)
+ 
+ They should feel secure about modifying a program, retaining the spirit and style of the original author.</description>
+    </item>
     
     <item>
       <title>Protected Dynamic Client Registration</title>
