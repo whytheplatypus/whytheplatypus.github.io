@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://why.theplatypus.codes/note/quotes-from-books-taken-entirely-out-of-context-and-therefor-completely-useless/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://why.theplatypus.codes/note/elixir-protocols-and-behaviors/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
   </url>
@@ -26,6 +31,18 @@
   <url>
     <loc>https://why.theplatypus.codes/tags/behaviors/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/books/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/coding/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -61,7 +78,7 @@
   
   <url>
     <loc>https://why.theplatypus.codes/note/</loc>
-    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,6 +91,12 @@
   <url>
     <loc>https://why.theplatypus.codes/tags/protocols/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/style/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -91,7 +114,7 @@
   
   <url>
     <loc>https://why.theplatypus.codes/</loc>
-    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
