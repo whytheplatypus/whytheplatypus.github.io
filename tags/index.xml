@@ -75,11 +75,29 @@
     </item>
     
     <item>
+      <title>Go</title>
+      <link>https://why.theplatypus.codes/tags/go/</link>
+      <pubDate>Mon, 17 Feb 2020 14:58:43 -0500</pubDate>
+      
+      <guid>https://why.theplatypus.codes/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Jws</title>
       <link>https://why.theplatypus.codes/tags/jws/</link>
       <pubDate>Fri, 30 Mar 2018 15:37:06 -0400</pubDate>
       
       <guid>https://why.theplatypus.codes/tags/jws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mdns</title>
+      <link>https://why.theplatypus.codes/tags/mdns/</link>
+      <pubDate>Mon, 17 Feb 2020 14:58:43 -0500</pubDate>
+      
+      <guid>https://why.theplatypus.codes/tags/mdns/</guid>
       <description></description>
     </item>
     
@@ -98,6 +116,24 @@
       <pubDate>Mon, 16 Jul 2018 13:18:00 -0400</pubDate>
       
       <guid>https://why.theplatypus.codes/tags/protocols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberrypi</title>
+      <link>https://why.theplatypus.codes/tags/raspberrypi/</link>
+      <pubDate>Mon, 17 Feb 2020 14:58:43 -0500</pubDate>
+      
+      <guid>https://why.theplatypus.codes/tags/raspberrypi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reverse Proxy</title>
+      <link>https://why.theplatypus.codes/tags/reverse-proxy/</link>
+      <pubDate>Mon, 17 Feb 2020 14:58:43 -0500</pubDate>
+      
+      <guid>https://why.theplatypus.codes/tags/reverse-proxy/</guid>
       <description></description>
     </item>
     

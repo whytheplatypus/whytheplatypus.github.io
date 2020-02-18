@@ -6,10 +6,19 @@
     <description>Recent content on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 May 2019 10:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 14:58:43 -0500</lastBuildDate>
     
 	<atom:link href="https://why.theplatypus.codes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Switchboard</title>
+      <link>https://why.theplatypus.codes/switchboard/</link>
+      <pubDate>Mon, 17 Feb 2020 14:58:43 -0500</pubDate>
+      
+      <guid>https://why.theplatypus.codes/switchboard/</guid>
+      <description>The problem Sometimes I build little things that have a web componant. It might be a webiste or an API, the usual suspects. As much as it scares me sometimes I also think that these things should run for real and be treated as real, if small, products in order to take them serisiously myself. The final piece to the puzzle is my own laziness. The cloud is a fine place to host things.</description>
+    </item>
     
     <item>
       <title>Quotes from books taken entirely out of context and therefore completely useless.</title>

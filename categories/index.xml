@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Why The Platypus Codes</title>
+    <link>https://why.theplatypus.codes/categories/</link>
+    <description>Recent content in Categories on Why The Platypus Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://why.theplatypus.codes/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Weekend Knitting</title>
+      <link>https://why.theplatypus.codes/categories/weekend-knitting/</link>
+      <pubDate>Mon, 17 Feb 2020 14:58:43 -0500</pubDate>
+      
+      <guid>https://why.theplatypus.codes/categories/weekend-knitting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

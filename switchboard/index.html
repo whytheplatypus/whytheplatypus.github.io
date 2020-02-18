@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Switchboard"/>
+<meta name="twitter:description" content="The problem Sometimes I build little things that have a web componant. It might be a webiste or an API, the usual suspects. As much as it scares me sometimes I also think that these things should run for real and be treated as real, if small, products in order to take them serisiously myself. The final piece to the puzzle is my own laziness. The cloud is a fine place to host things."/>
+
+	<meta property="og:title" content="Switchboard" />
+<meta property="og:description" content="The problem Sometimes I build little things that have a web componant. It might be a webiste or an API, the usual suspects. As much as it scares me sometimes I also think that these things should run for real and be treated as real, if small, products in order to take them serisiously myself. The final piece to the puzzle is my own laziness. The cloud is a fine place to host things." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://why.theplatypus.codes/switchboard/" /><meta property="article:published_time" content="2020-02-17T14:58:43-05:00"/>
+<meta property="article:modified_time" content="2020-02-17T14:58:43-05:00"/>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"><link rel="stylesheet" href="https://why.theplatypus.codes/scss/monotreme.css" integrity="" media="screen">
+</head>
+<body><nav class="navigation">
+	<section class="container">
+		<ul class="navigation-list float-right">
+			<li class="navigation-item"><a href="https://why.theplatypus.codes/">
+					<span class="arrow">←</span>
+					Home
+				</a>
+			</li>
+			<li class="navigation-item"><a href="/index.xml">Subscribe</a></li>
+		</ul>
+	</section>
+</nav>
+
+        <div id="content">
+<section class="container page">
+  <article>
+    <header>
+	    <h1>
+                 Switchboard
+		 
+		 <small><a href="https://github.com/artistedev/switchboard" _target=blank>&lt;src/&gt;</a></small>
+                 
+            </h1>
+    </header>
+
+    
+
+<h2 id="the-problem">The problem</h2>
+
+<p>Sometimes I build little things that have a web componant.
+It might be a webiste or an API, the usual suspects.
+As much as it scares me sometimes I also think that these things should run for real and be treated as real, if small, products in order to take them serisiously myself.
+The final piece to the puzzle is my own laziness.
+The cloud is a fine place to host things.
+AWS, Google Cloud, Linnode make it easy.
+Terraform makes it even easier.
+But I&rsquo;m very lazy,
+I have a perfectly good internet connection,
+I own a few domains,
+and I have an abundance of rasperry pis that I have no idea what to do with.</p>
+
+<h2 id="the-plan">The plan</h2>
+
+<p>Build a system (I called it <code>switchboard</code>) that I can point web traffic to from my home router that will then forward it on to my little projects.
+Again I&rsquo;m lazy, so once it&rsquo;s running I never want to touch <code>switchboard</code>.
+Since it&rsquo;s for my local home network mDNS works fine and can be leveraged by the little projects to tell the <code>switchboard</code> what to send their way.</p>
+
+<p>I&rsquo;m going to use <code>go</code> for three reasons:</p>
+
+<ol>
+<li>It&rsquo;s standard library. In this particular case the ability to make a reverse proxy in one clear line of code: <a href="https://golang.org/pkg/net/http/httputil/#NewSingleHostReverseProxy"><code>NewSingleHostReverseProxy</code></a></li>
+<li>Building for the raspberry pi is easy: <code>env GOOS=linux GOARCH=arm GOARM=5 go build</code></li>
+<li>There&rsquo;s an mDNS library that I trust <a href="https://github.com/hashicorp/mdns">hashicorp/mdns</a></li>
+</ol>
+
+<h2 id="nuts-and-bolts">Nuts and Bolts</h2>
+
+<h3 id="broadcasting-to-mdns">Broadcasting to mDNS</h3>
+
+<pre><code>func Hookup(pattern string, port int) *mdns.Server {
+</code></pre>
+
+<p>This is going to let the world know that requests matching <code>pattern</code> should be send to <em>this</em> box on <code>port</code>.</p>
+
+<pre><code>	// Setup our service export
+	host, _ := os.Hostname()
+	info := []string{pattern}
+	service, _ := mdns.NewMDNSService(
+		host,
+		fmt.Sprintf(&quot;%s&quot;, config.ServiceName),
+		&quot;&quot;,
+		&quot;&quot;,
+		port,
+		nil,
+		info,
+	)
+
+	// Create the mDNS server, defer shutdown
+	server, _ := mdns.NewServer(&amp;mdns.Config{Zone: service})
+	return server
+}
+</code></pre>
+
+<p>Yup, that&rsquo;s it&hellip; sort of, see the repo for handling shutdown (basically you just tell it to shutdown).</p>
+
+<h3 id="listening-to-mdns">Listening to mDNS</h3>
+
+<pre><code>func Listen(ctx context.Context) {
+	ticker := time.NewTicker(5 * time.Second)
+	defer ticker.Stop()
+</code></pre>
+
+<p>This <code>ticker</code> sends a message across it&rsquo;s channel, <code>ticker.C</code>, every 5 seconds.</p>
+
+<pre><code>	// Make a channel for results and start listening
+	entries := make(chan *mdns.ServiceEntry, 5)
+</code></pre>
+
+<p>A channel <code>entries</code> is created to act as a queue of mdns service entries that <code>switchboard</code> has seen that might require it&rsquo;s attention.</p>
+
+<pre><code>
+	// Start the lookup
+	go func(entries chan *mdns.ServiceEntry) {
+</code></pre>
+
+<p>A thread handles watching the network for service entries.</p>
+
+<pre><code>		defer close(entries)
+		defer fmt.Println(&quot;Done listening&quot;)
+		for {
+			select {
+			case &lt;-ctx.Done():
+				return
+</code></pre>
+
+<p>That thread ends if the context is closed.</p>
+
+<pre><code>			case &lt;-ticker.C:
+				mdns.Lookup(fmt.Sprintf(&quot;%s&quot;, config.ServiceName), entries)
+</code></pre>
+
+<p><code>switchboard</code> checks in with the local network regularly to see if anyone is publishing a mDNS record that it should pay attention to.</p>
+
+<pre><code>			}
+		}
+	}(entries)
+	for entry := range entries {
+		fmt.Printf(&quot;Got new entry: %+v\n&quot;, entry)
+		Connect(entry)
+	}
+</code></pre>
+
+<p>Anything on the queue is looked at to see if it should be registered for forwarding.</p>
+
+<pre><code>}
+</code></pre>
+
+<h3 id="updating-patterns-on-a-servmux">Updating patterns on a ServMux</h3>
+
+<pre><code>func Connect(entry *mdns.ServiceEntry) {
+	if existing, ok := registry[entry.InfoFields[0]]; ok {
+		if existing.AddrV4.Equal(entry.AddrV4) &amp;&amp; existing.Port == entry.Port {
+			return
+		}
+		*Phonebook = http.ServeMux{}
+		delete(registry, entry.InfoFields[0])
+		for _, ent := range registry {
+			register(ent)
+		}
+</code></pre>
+
+<p>In order for <code>switchboard</code> to update it&rsquo;s routes while continuing to use the deafult <code>ServeMux</code>
+it was nessisary to swap out the <code>ServeMux</code> entirely.</p>
+
+<pre><code>	}
+	register(entry)
+}
+</code></pre>
+
+<h3 id="registering-patterns-with-a-servmux">Registering patterns with a ServMux</h3>
+
+<pre><code>func register(entry *mdns.ServiceEntry) {
+	if !strings.Contains(entry.Name, config.ServiceName) {
+		fmt.Println(&quot;unknown entry&quot;)
+		return
+	}
+</code></pre>
+
+<p>Some entries were coming through from other devices in the house.
+<code>switchboard</code> could probably be more picky in it&rsquo;s lookup,
+but &ldquo;trust but verify&rdquo; is a good rule to live by anyway.
+So if the entry doesn&rsquo;t look familiar, drop it.</p>
+
+<pre><code>	if _, ok := registry[entry.InfoFields[0]]; ok {
+		return
+	}
+</code></pre>
+
+<p><code>switchboard</code> keeps track of the patterns it&rsquo;s seen because the <a href="https://golang.org/pkg/net/http/"><code>http</code></a> default <code>ServeMux</code> panics if you try and tell it what to do with a pattern more than once.</p>
+
+<pre><code>	u, _ := url.Parse(fmt.Sprintf(&quot;http://%s:%d&quot;, entry.AddrV4, entry.Port))
+	rp := httputil.NewSingleHostReverseProxy(u)
+	Phonebook.Handle(entry.InfoFields[0], rp)
+	registry[entry.InfoFields[0]] = entry
+}
+</code></pre>
+
+<h3 id="handling-tls">Handling tls</h3>
+
+<pre><code>func (s *server) serve(ctx context.Context) error {
+
+	srv := &amp;http.Server{
+		Addr:    s.Addr,
+		Handler: s.Handler,
+	}
+
+	if s.CertDir != &quot;&quot; &amp;&amp; len(s.Domains) &gt; 0 {
+		m := &amp;autocert.Manager{
+			Prompt: autocert.AcceptTOS,
+		}
+
+		m.HostPolicy = autocert.HostWhitelist(s.Domains...)
+
+		if err := os.MkdirAll(s.CertDir, os.ModePerm); err != nil {
+			return err
+		}
+		m.Cache = autocert.DirCache(s.CertDir)
+		srv.Handler = m.HTTPHandler(nil)
+</code></pre>
+
+<p>Replaces the origional servers handler with one that helps manage tls.</p>
+
+<pre><code>
+		crtSrv := &amp;http.Server{
+			Handler: s.Handler,
+		}
+</code></pre>
+
+<p>This is a tls server, and the one that should be handling traffic.</p>
+
+<pre><code>		//TODO return errors
+		go crtSrv.Serve(m.Listener())
+		defer crtSrv.Shutdown(context.Background())
+	}
+
+	//TODO return errors
+	go srv.ListenAndServe()
+	&lt;-ctx.Done()
+	//TODO return errors
+	srv.Shutdown(context.Background())
+	return nil
+}
+</code></pre>
+
+  </article>
+</section>
+
+        </div>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137506633-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
