@@ -154,7 +154,18 @@ Since it&rsquo;s for my local home network mDNS works fine and can be leveraged 
 <h3 id="updating-patterns-on-a-servmux">Updating patterns on a ServMux</h3>
 
 <pre><code>func Connect(entry *mdns.ServiceEntry) {
-	if existing, ok := registry[entry.InfoFields[0]]; ok {
+	if !strings.Contains(entry.Name, config.ServiceName) {
+		fmt.Println(&quot;unknown entry&quot;)
+		return
+	}
+</code></pre>
+
+<p>Some entries were coming through from other devices in the house.
+<code>switchboard</code> could probably be more picky in it&rsquo;s lookup,
+but &ldquo;trust but verify&rdquo; is a good rule to live by anyway.
+So if the entry doesn&rsquo;t look familiar, drop it.</p>
+
+<pre><code>	if existing, ok := registry[entry.InfoFields[0]]; ok {
 		if existing.AddrV4.Equal(entry.AddrV4) &amp;&amp; existing.Port == entry.Port {
 			return
 		}
@@ -176,18 +187,7 @@ it was nessisary to swap out the <code>ServeMux</code> entirely.</p>
 <h3 id="registering-patterns-with-a-servmux">Registering patterns with a ServMux</h3>
 
 <pre><code>func register(entry *mdns.ServiceEntry) {
-	if !strings.Contains(entry.Name, config.ServiceName) {
-		fmt.Println(&quot;unknown entry&quot;)
-		return
-	}
-</code></pre>
-
-<p>Some entries were coming through from other devices in the house.
-<code>switchboard</code> could probably be more picky in it&rsquo;s lookup,
-but &ldquo;trust but verify&rdquo; is a good rule to live by anyway.
-So if the entry doesn&rsquo;t look familiar, drop it.</p>
-
-<pre><code>	if _, ok := registry[entry.InfoFields[0]]; ok {
+	if _, ok := registry[entry.InfoFields[0]]; ok {
 		return
 	}
 </code></pre>
@@ -195,8 +195,13 @@ So if the entry doesn&rsquo;t look familiar, drop it.</p>
 <p><code>switchboard</code> keeps track of the patterns it&rsquo;s seen because the <a href="https://golang.org/pkg/net/http/"><code>http</code></a> default <code>ServeMux</code> panics if you try and tell it what to do with a pattern more than once.</p>
 
 <pre><code>	u, _ := url.Parse(fmt.Sprintf(&quot;http://%s:%d&quot;, entry.AddrV4, entry.Port))
-	rp := httputil.NewSingleHostReverseProxy(u)
-	Phonebook.Handle(entry.InfoFields[0], rp)
+	var handler http.Handler
+	handler = httputil.NewSingleHostReverseProxy(u)
+	parts := strings.SplitN(entry.InfoFields[0], &quot;/&quot;, 2)
+	if len(parts) &gt; 1 &amp;&amp; parts[1] != &quot;&quot; {
+		handler = http.StripPrefix(fmt.Sprintf(&quot;/%s&quot;, parts[1]), handler)
+	}
+	Phonebook.Handle(entry.InfoFields[0], handler)
 	registry[entry.InfoFields[0]] = entry
 }
 </code></pre>
