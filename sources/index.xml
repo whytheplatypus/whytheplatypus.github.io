@@ -6,10 +6,19 @@
     <description>Recent content in Sources on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 May 2019 10:30:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 15:44:29 -0400</lastBuildDate>
     
 	<atom:link href="https://why.theplatypus.codes/sources/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Emperor&#39;s Old Clothes</title>
+      <link>https://why.theplatypus.codes/sources/the-emperors-old-clothes/</link>
+      <pubDate>Mon, 23 Mar 2020 15:44:29 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/sources/the-emperors-old-clothes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Structure and Interpretation of Computer Programs</title>

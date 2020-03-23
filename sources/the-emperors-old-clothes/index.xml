@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Emperor&#39;s Old Clothes on Why The Platypus Codes</title>
+    <link>https://why.theplatypus.codes/sources/the-emperors-old-clothes/</link>
+    <description>Recent content in The Emperor&#39;s Old Clothes on Why The Platypus Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2020 15:44:29 -0400</lastBuildDate>
+    
+	<atom:link href="https://why.theplatypus.codes/sources/the-emperors-old-clothes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Price of Reliability</title>
+      <link>https://why.theplatypus.codes/quotes/price-of-reliability/</link>
+      <pubDate>Mon, 23 Mar 2020 15:44:29 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/price-of-reliability/</guid>
+      <description> The price of reliability is the pursuit of the utmost simplicity. It is a price which the very rich find most hard to pay.
+ </description>
+    </item>
+    
+    <item>
+      <title>Language Complexity</title>
+      <link>https://why.theplatypus.codes/quotes/language-complexity/</link>
+      <pubDate>Mon, 23 Mar 2020 15:42:08 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/language-complexity/</guid>
+      <description> If our basic tool, the language in which we design and code our programs, is also complicated, the language itself becomes part of the problem rather than part of its solution.
+ </description>
+    </item>
+    
+    <item>
+      <title>Added Later</title>
+      <link>https://why.theplatypus.codes/quotes/added-later/</link>
+      <pubDate>Mon, 23 Mar 2020 15:36:28 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/added-later/</guid>
+      <description> A feature which is omitted can always be added later, when its design and its implications are well understood. A feature which is included before it is fully understood can never be removed later.
+ </description>
+    </item>
+    
+    <item>
+      <title>Two Ways</title>
+      <link>https://why.theplatypus.codes/quotes/two-ways/</link>
+      <pubDate>Mon, 23 Mar 2020 15:21:48 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/two-ways/</guid>
+      <description> I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.
+ </description>
+    </item>
+    
+    <item>
+      <title>Subset Improvement</title>
+      <link>https://why.theplatypus.codes/quotes/subset-improvement/</link>
+      <pubDate>Mon, 23 Mar 2020 15:17:23 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/subset-improvement/</guid>
+      <description> we recognized that a subset could be an improvement on the original.
+ </description>
+    </item>
+    
+    <item>
+      <title>Read by People</title>
+      <link>https://why.theplatypus.codes/quotes/read-by-people/</link>
+      <pubDate>Mon, 23 Mar 2020 15:14:41 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/read-by-people/</guid>
+      <description> First, we certainly want programs to be read by people and people prefer to read things once in a single pass.
+ </description>
+    </item>
+    
+    <item>
+      <title>Against the Law</title>
+      <link>https://why.theplatypus.codes/quotes/against-the-law/</link>
+      <pubDate>Mon, 23 Mar 2020 15:04:51 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/against-the-law/</guid>
+      <description> In any respectable branch of engineering, failure to observe such elementary precautions would have long been against the law.
+ </description>
+    </item>
+    
+  </channel>
+</rss>
