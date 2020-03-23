@@ -546,3 +546,11 @@ blockquote:before {
   left: -20px;
   top: -20px;
   color: #7a7a7a; }
+
+.reading-list .source h2 {
+  margin-bottom: 0.0rem; }
+
+.reading-list .source footer {
+  margin: 3rem 0; }
+  .reading-list .source footer hr {
+    margin: 0; }

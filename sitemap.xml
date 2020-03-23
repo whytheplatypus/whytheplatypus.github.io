@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://why.theplatypus.codes/categories/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/go/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/mdns/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/raspberrypi/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/reverse-proxy/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
   
   <url>
     <loc>https://why.theplatypus.codes/switchboard/</loc>
@@ -8,8 +33,83 @@
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/thought/quotes-from-books-taken-entirely-out-of-context-and-therefore-completely-useless/</loc>
+    <loc>https://why.theplatypus.codes/tags/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/categories/weekend-knitting/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/</loc>
+    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/conjure-the-spirits/</loc>
     <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/how-to/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/in-order-to-use-it/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/incidentally-for-machines/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/not-a-science/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/read-and-write/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/spirit-and-style/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/visualize-the-behavior/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/quotes/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/sources/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/sources/structure-and-interpretation-of-computerprograms/</loc>
+    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/behaviors/</loc>
+    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/tags/elixir/</loc>
+    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
   </url>
   
   <url>
@@ -18,144 +118,58 @@
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/thought/protected-dynamic-client-registration/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</loc>
-    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/arch-linux/</loc>
-    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/behaviors/</loc>
-    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/books/</loc>
-    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/coding/</loc>
-    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/cryptography/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/dcrp/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/elixir/</loc>
-    <lastmod>2018-07-16T13:18:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/fable/</loc>
-    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/go/</loc>
-    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/jws/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/mdns/</loc>
-    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://why.theplatypus.codes/note/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://why.theplatypus.codes/tags/oauth2/</loc>
-    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://why.theplatypus.codes/tags/protocols/</loc>
     <lastmod>2018-07-16T13:18:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/tags/raspberrypi/</loc>
-    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://why.theplatypus.codes/tags/cryptography/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/tags/reverse-proxy/</loc>
-    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://why.theplatypus.codes/tags/dcrp/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/tags/style/</loc>
-    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
-    <priority>0</priority>
+    <loc>https://why.theplatypus.codes/tags/jws/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/tags/</loc>
-    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
-    <priority>0</priority>
+    <loc>https://why.theplatypus.codes/tags/oauth2/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/thought/protected-dynamic-client-registration/</loc>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://why.theplatypus.codes/thought/</loc>
-    <lastmod>2019-05-07T10:30:00-04:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2018-03-30T15:37:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/categories/weekend-knitting/</loc>
-    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://why.theplatypus.codes/tags/arch-linux/</loc>
+    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://why.theplatypus.codes/</loc>
-    <lastmod>2020-02-17T14:58:43-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://why.theplatypus.codes/fable/</loc>
+    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/</loc>
+    <lastmod>2017-12-26T12:28:00-04:00</lastmod>
   </url>
   
 </urlset>

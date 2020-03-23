@@ -12,8 +12,10 @@ Payload MUST contain at least one of kid, jku, jwk to allow identification of th
 This uses the General JWS JSON Serialization Syntax to exchange data and signatures between parties.
 Payload MUST contain at least one of kid, jku, jwk to allow identification of the Developer." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://why.theplatypus.codes/thought/protected-dynamic-client-registration/" /><meta property="article:published_time" content="2018-03-30T15:37:06-04:00"/>
-<meta property="article:modified_time" content="2018-03-30T15:37:06-04:00"/>
+<meta property="og:url" content="https://why.theplatypus.codes/thought/protected-dynamic-client-registration/" />
+<meta property="article:published_time" content="2018-03-30T15:37:06-04:00" />
+<meta property="article:modified_time" content="2018-03-30T15:37:06-04:00" />
+
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"><link rel="stylesheet" href="https://why.theplatypus.codes/scss/monotreme.css" integrity="" media="screen">
@@ -41,63 +43,45 @@ Payload MUST contain at least one of kid, jku, jwk to allow identification of th
             </h1>
     </header>
 
-    
-
-<h1 id="thoughts-on-protected-dynamic-client-registration">Thoughts on Protected Dynamic Client Registration.</h1>
-
+    <h1 id="thoughts-on-protected-dynamic-client-registration">Thoughts on Protected Dynamic Client Registration.</h1>
 <p>This proposes a method of trust intended for <a href="https://tools.ietf.org/html/rfc7591#section-2.3">software
 statements</a> that can be
 Endorsed by trusted 3rd parties, and used by an authorization server
 that has little or no knowledge of the Developer.</p>
-
 <p>This uses the <a href="https://tools.ietf.org/html/rfc7515#section-7.2.1">General JWS JSON Serialization
 Syntax</a> to exchange
 data and signatures between parties.</p>
-
 <h2 id="payload">Payload</h2>
-
 <p>MUST contain at least one of
 <a href="https://tools.ietf.org/html/rfc7515#section-4.1.4">kid</a>,
 <a href="https://tools.ietf.org/html/rfc7515#section-4.1.2">jku</a>,
 <a href="https://tools.ietf.org/html/rfc7515#section-4.1.3">jwk</a> to allow
 identification of the Developer.</p>
-
 <h2 id="signatures">Signatures</h2>
-
-<h3 id="endorsement-signature-s">Endorsement Signature(s)</h3>
-
+<h3 id="endorsement-signatures">Endorsement Signature(s)</h3>
 <p>MAY contain <code>exp</code> with a timestamp of the expiration time. MAY contain
 <code>iss</code> identifying the Endorser. Which endorsement bodies the
 authorization server chooses to trust and how it verifies these
 signatures is outside the scope of this document.</p>
-
 <h3 id="developer-signature">Developer Signature</h3>
-
 <p>The <a href="https://tools.ietf.org/html/rfc7515#section-7.2.1">protected
 header</a> MUST contain
 <code>exp</code> with a timestamp of the expiration time.</p>
-
 <pre><code>{
     &quot;crit&quot;: [&quot;exp&quot;],
     &quot;exp&quot;: 1363284000,
 }
 </code></pre>
-
 <p>The authorization server MAY specify that this expiration cannot be too
 far in the future.</p>
-
 <p>MUST contain ONE OF
 <a href="https://tools.ietf.org/html/rfc7515#section-4.1.3">jwk</a> or
 <a href="https://tools.ietf.org/html/rfc7515#section-4.1.4">kid</a> that must match
 or be used to identify the key in the payload used to create this
 signature.</p>
-
 <p>MUST be the last entry in signature array.</p>
-
 <h1 id="example-usage">Example usage</h1>
-
-<p><a href="/images/protected_dynamic_client_registration.png"><img src="flow.png" alt="protected dcrp
-flow" /></a></p>
+<p><a href="/images/protected_dynamic_client_registration.png"><img src="flow.png" alt="protected dcrpflow"></a></p>
 
   </article>
 </section>

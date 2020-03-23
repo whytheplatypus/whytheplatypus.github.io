@@ -8,8 +8,10 @@
 	<meta property="og:title" content="How the Platypus Built an Arch" />
 <meta property="og:description" content="One evening the platypus was in his workshop tinkering with a new piece of code. As the evening wore on and the code grew the platypus started to think about the code&rsquo;s future. Who would use it? Where would it live? He knew that only he would use the code, it was just a silly personal project after all, but to his dismay he did not know where it could live." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/" /><meta property="article:published_time" content="2017-12-26T12:28:00-04:00"/>
-<meta property="article:modified_time" content="2017-12-26T12:28:00-04:00"/>
+<meta property="og:url" content="https://why.theplatypus.codes/fable/how-the-platypus-built-an-arch/" />
+<meta property="article:published_time" content="2017-12-26T12:28:00-04:00" />
+<meta property="article:modified_time" content="2017-12-26T12:28:00-04:00" />
+
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"><link rel="stylesheet" href="https://why.theplatypus.codes/scss/monotreme.css" integrity="" media="screen">
@@ -37,9 +39,7 @@
             </h1>
     </header>
 
-    
-
-<p>One evening the platypus was in his workshop tinkering with a new piece
+    <p>One evening the platypus was in his workshop tinkering with a new piece
 of code. As the evening wore on and the code grew the platypus started
 to think about the code&rsquo;s future. Who would use it? Where would it live?
 He knew that only he would use the code, it was just a silly personal
@@ -50,157 +50,113 @@ there. &ldquo;What if there was a small cloud,&rdquo; he thought, &ldquo;close t
 that was cheap (<a href="http://www.imdb.com/title/tt0120735/">like the
 budgie</a>)?&rdquo; Well, then the code
 could live in a cloud.</p>
-
 <p>The platypus knew that even his small cloud would have to be high up.
 Looking around the workshop the platypus spotted an old tower, but the
 tower didn&rsquo;t have any structure. There was nothing the platypus could
 put the pieces of a cloud on.</p>
-
 <p>&ldquo;I will build an arch on the tower,&rdquo; the platypus thought, &ldquo;then the
 cloud can sit on the arch.&rdquo;</p>
-
-<h2 id="partitioning-https-wiki-archlinux-org-index-php-installation-guide-partition-the-disks"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks">Partitioning</a></h2>
-
+<h2 id="partitioninghttpswikiarchlinuxorgindexphpinstallation_guidepartition_the_disks"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks">Partitioning</a></h2>
 <p>For this arch the platypus built two partitions one to boot, one to run.
 Boot was
 <a href="https://wiki.archlinux.org/index.php/partitioning#.2Fboot">small</a>, and
 <a href="https://wiki.archlinux.org/index.php/syslinux">fat</a>. The one to run,
 the Root, was big and
 <a href="https://wiki.archlinux.org/index.php/ext4">extendable</a>.</p>
-
 <pre><code>parted /dev/sdx
 mkpart primary fat32 1MiB 513MiB
 mkpart primary ext4 513MiB 100%
 </code></pre>
-
 <blockquote>
 <p>It may also be necessary to explicitly <a href="https://wiki.archlinux.org/index.php/Installation_guide#Format_the_partitions">format the
 partitions</a>.
 <code>mkfs.vfat -F 32 /dev/sdxx</code> and <code>mkfs.ext4 /dev/sdxy</code> should do it.
 Installing <code>dosfstools</code> might be required for <code>mkfs.vfat</code>.</p>
 </blockquote>
-
-<h2 id="mounting-https-wiki-archlinux-org-index-php-installation-guide-mount-the-file-systems"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Mount_the_file_systems">Mounting</a></h2>
-
+<h2 id="mountinghttpswikiarchlinuxorgindexphpinstallation_guidemount_the_file_systems"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Mount_the_file_systems">Mounting</a></h2>
 <p>Starting work, the platypus placed the Root of the new arch on his
 workbench. <a href="https://wiki.archlinux.org/index.php/Install_from_existing_Linux#From_a_host_running_Arch_Linux">Which was also an
 arch</a>.</p>
-
 <pre><code>sudo mount /dev/sdxx /mnt
 </code></pre>
-
 <p>The Boot was placed on top of the Root.</p>
-
 <pre><code>sudo mkdir /mnt/boot
 sudo mount /dev/sdxy /mnt/boot
 </code></pre>
-
 <h2 id="construction">Construction</h2>
-
 <p>Then the platypus got out all of his arch building tools.</p>
-
 <pre><code>pacman -S arch-install-scripts
 </code></pre>
-
 <p>One tool, <code>pacstrap</code>, allowed the platypus to <a href="https://wiki.archlinux.org/index.php/Installation_guide#Install_the_base_packages">put more
 structure</a>
 into the new arch. He put the <code>base</code> in.</p>
-
 <pre><code>pacstrap /mnt base
 </code></pre>
-
 <p>He wanted to be able to write on the arch.</p>
-
 <pre><code>pacstrap /mnt vim
 </code></pre>
-
 <p>And talk to it from afar.</p>
-
 <pre><code>pacstrap /mnt openssh
 </code></pre>
-
 <p>He also wanted others to be able to find the arch.</p>
-
 <pre><code>pacstrap /mnt avahi nss-mdns
 </code></pre>
-
 <p>Next the platypus put down some
 <a href="https://wiki.archlinux.org/index.php/Installation_guide#Fstab">scaffolding</a>
 that the arch would need to support other things once it was done.</p>
-
 <pre><code>sudo sh -c 'genfstab -U /mnt &gt;&gt; /mnt/etc/fstab'
 </code></pre>
-
 <h2 id="configure">Configure</h2>
-
 <p><a href="https://wiki.archlinux.org/index.php/Installation_guide#Chroot">Working
 inside</a>
 the newly constructed arch</p>
-
 <pre><code>arch-chroot /mnt
 </code></pre>
-
 <p>The platypus <a href="https://wiki.archlinux.org/index.php/Installation_guide#Time_zone">set the
 time</a>,</p>
-
 <pre><code>ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 </code></pre>
-
 <p>set the <a href="https://wiki.archlinux.org/index.php/Installation_guide#Locale">local
 language</a>,</p>
-
 <pre><code># uncomment languages in `/etc/locale.gen`
 
 locale-gen
 
 echo LANG=en_US.UTF-8 &gt;&gt; /etc/locale.conf
 </code></pre>
-
 <p><a href="https://wiki.archlinux.org/index.php/Installation_guide#Hostname">named</a>
 the arch,</p>
-
 <pre><code>echo myhostname &gt;&gt; /etc/hostname
 </code></pre>
-
 <p>and set up some <a href="https://wiki.archlinux.org/index.php/Installation_guide#Root_password">minimal
 fortifications</a>.</p>
-
 <pre><code>passwd
 </code></pre>
-
 <p>Next, knowing that he wanted to be able to reach the new arch, he made
 sure it was
 <a href="https://wiki.archlinux.org/index.php/Secure_Shell#Daemon_management">accessible</a></p>
-
 <pre><code>systemctl enable sshd.socket
 </code></pre>
-
 <blockquote>
 <p>if you need to permit root login open <code>/etc/ssh/sshd_config</code>, comment
 out <code>PermitRootLogin without-password</code> to allow root login with a
 password, then add or uncomment the line <code>PermitRootLogin yes</code> to
 allow <code>root</code> to login at all.</p>
 </blockquote>
-
 <p>and that he could <a href="https://wiki.archlinux.org/index.php/avahi#Installation">find it from a
 distance</a>.</p>
-
 <pre><code>systemctl enable avahi-daemon.service
 </code></pre>
-
-<h2 id="booting-https-wiki-archlinux-org-index-php-installation-guide-boot-loader"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Boot_loader">Booting</a></h2>
-
+<h2 id="bootinghttpswikiarchlinuxorgindexphpinstallation_guideboot_loader"><a href="https://wiki.archlinux.org/index.php/Installation_guide#Boot_loader">Booting</a></h2>
 <p>The new arch was almost ready. All that was left was to tell the new
 arch
 <a href="https://wiki.archlinux.org/index.php/syslinux#Automatic_Install">how</a>
 to get itself
 <a href="https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_a_USB_key#Syslinux">started</a>.</p>
-
 <pre><code>pacman -S syslinux gptfdisk mtools
 syslinux-install_update  -i -a -m
 </code></pre>
-
 <blockquote>
 <p>If there are any problems finding the root device when booting check
 the order of the
@@ -210,7 +166,6 @@ The <code>HOOKS</code> in <code>/etc/mkinitcpio.conf</code> should looks somethi
 note <code>block</code> coming before <code>autodetect</code>. If you make any changes run
 <code>mkinitcpio -p linux</code> to make them stick.</p>
 </blockquote>
-
 <p>The platypus stepped back from his workbench. The new arch was ready.</p>
 
   </article>
