@@ -6,10 +6,30 @@
     <description>Recent content in Quotes on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 15:44:29 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 08:28:49 -0400</lastBuildDate>
     
 	<atom:link href="https://why.theplatypus.codes/quotes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reachable States</title>
+      <link>https://why.theplatypus.codes/quotes/reachable-states/</link>
+      <pubDate>Fri, 03 Apr 2020 08:28:49 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/reachable-states/</guid>
+      <description> In order to assist the checker, the programmer should make assertions about the various states that the machine can reach.
+ </description>
+    </item>
+    
+    <item>
+      <title>Definite Assertions</title>
+      <link>https://why.theplatypus.codes/quotes/definite-assertions/</link>
+      <pubDate>Fri, 03 Apr 2020 08:28:21 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/quotes/definite-assertions/</guid>
+      <description> the programmer should make a number of definite assertions which can be checked individually, and from which the correctness of the whole programme easily follows.
+ </description>
+    </item>
     
     <item>
       <title>Price of Reliability</title>

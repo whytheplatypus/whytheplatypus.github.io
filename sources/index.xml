@@ -6,10 +6,19 @@
     <description>Recent content in Sources on Why The Platypus Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 15:44:29 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 08:28:49 -0400</lastBuildDate>
     
 	<atom:link href="https://why.theplatypus.codes/sources/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An Early Program Proof by Alan Turing</title>
+      <link>https://why.theplatypus.codes/sources/an-early-program-proof-by-alan-turing/</link>
+      <pubDate>Fri, 03 Apr 2020 08:28:49 -0400</pubDate>
+      
+      <guid>https://why.theplatypus.codes/sources/an-early-program-proof-by-alan-turing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The Emperor&#39;s Old Clothes</title>
